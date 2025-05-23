@@ -1,38 +1,116 @@
-.App {
+/* Global reset & black background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* Main container */
+.app {
   text-align: center;
+  padding: 30px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title styling */
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Player turn or winner */
+h2 {
+  color: #00ffcc;
+  margin: 1.5rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Board grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Each cell box */
+.cell {
+  width: 80px;
+  height: 80px;
+  background: #111;
+  border: 2px solid #444;
+  font-size: 40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.cell:hover {
+  background: #222;
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Player selection area */
+.selectors {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.selectors h3 {
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+
+.selectors select {
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background: #333;
+  color: #fff;
+}
+
+/* Start and Reset buttons */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #00ddb3;
+}
+
+/* Help section */
+.help {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 500px;
+  margin-inline: auto;
+  color: #bbb;
+}
+
+.help h3 {
+  color: #fff;
+}
+
+.help ul {
+  padding-left: 20px;
+}
+
+.help li {
+  margin-bottom: 8px;
 }
