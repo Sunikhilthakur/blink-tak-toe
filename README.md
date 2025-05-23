@@ -24,5 +24,5 @@ A twist on Tic Tac Toe using emojis and vanishing logic!
 - AI opponent mode
 
 ## Deployment
-🔗 [Live Link Here](https://your-deployed-site.com)
-📂 [GitHub Repo Here](https://github.com/your-username/blink-tac-toe)
+🔗 [Live Link Here](https://blink-tak-toe.vercel.app/)
+📂 [GitHub Repo Here](https://github.com/Sunikhilthakur/blink-tak-toe)
